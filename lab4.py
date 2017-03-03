@@ -24,9 +24,9 @@ def cur_temp():
         """
         temp = 0
 
-        f = open("/proc/eee/temperature", "r")
+#        f = open("/proc/eee/temperature", "r")
         temp = f.readline()
-        f.close()
+#        f.close()
 
         return int(temp)
 
@@ -35,9 +35,9 @@ def fan_ctrl(onoff):
         """
         Enable (1) or disable (0) manual control of fan
         """
-        f = open("/proc/eee/fan_manual", "w")
-        f.write(str(onoff))
-        f.close()
+ #       f = open("/proc/eee/fan_manual", "w")
+ #       f.write(str(onoff))
+ #      f.close()
 
 
 def temp2speed(temp):
@@ -55,9 +55,9 @@ def set_fan_speed(speed):
         """
         Sets new fan speed in percents
         """
-        f = open("/proc/eee/fan_speed", "w")
-        f.write(str(speed))
-        f.close()
+#        f = open("/proc/eee/fan_speed", "w")
+#        f.write(str(speed))
+#        f.close()
 
 
 
